@@ -1,6 +1,6 @@
 # Day Trader FR
 
-11 skills Claude pour analyser les actions américaines, préparer tes entrées et sorties, simuler un scénario et contrôler ton risque avant chaque ordre.
+12 skills Claude pour analyser les actions américaines, préparer tes entrées et sorties, simuler un scénario et contrôler ton risque avant chaque ordre.
 
 **Adaptation française par Dan AI Lab de [day-trader-skill](https://github.com/Jakeschincariol/day-trader-skill), créé par [Jake Schincariol](https://opusjake.ai).** Le projet d'origine est sous licence MIT. Son copyright et le texte de sa licence sont conservés dans [LICENSE](LICENSE). Cette adaptation est indépendante et ne constitue pas une collaboration avec l'auteur.
 
@@ -21,6 +21,7 @@ Les instructions et les réponses de l'assistant sont en français. Les 11 scrip
 | `/trader-alerts` | Signaler un seuil de prix, un stop, un objectif ou l'heure de clôturer. |
 | `/trader-analyst` | Lire les résultats publiés auprès de la SEC et expliquer ce qui a changé. |
 | `/trader-pelosi` | Lire les déclarations publiques de transactions des membres du Congrès américain. |
+| `/trader-journal` | Noter chaque trade clôturé et mesurer, frais inclus, si la méthode gagne vraiment de l'argent. Ajout de ce dépôt. |
 
 ## Périmètre
 
@@ -76,6 +77,7 @@ Le chemin complet pour un trade :
 scanner -> news -> entry -> exit -> timemachine -> budget -> risk -> broker
 alerts : stop, objectif et heure de sortie pendant la position
 news / analyst / pelosi : vérifications ponctuelles ou surveillance demandée
+journal : après chaque sortie, puis stats pour juger la méthode
 ```
 
 Le scanner produit une liste de graphiques qui correspondent à des règles. Tu choisis celui à examiner. Le plan fixe ensuite l'entrée, le stop, l'objectif et l'heure de sortie. La simulation précède le calcul de taille, puis le contrôle du risque.

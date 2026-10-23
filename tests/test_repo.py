@@ -8,8 +8,8 @@ from _load import ROOT
 # v2, the day-trading pack: the eleven folders the reel's repo card shows
 SKILLS = ["trader-scanner", "trader-news", "trader-entry", "trader-exit", "trader-timemachine",
           "trader-risk", "trader-budget", "trader-broker", "trader-alerts", "trader-analyst",
-          "trader-pelosi"]
-ABOUT = '11 skills Claude en français pour analyser les actions américaines, préparer un trade intraday, simuler un scénario et contrôler le risque.'
+          "trader-pelosi", "trader-journal"]
+ABOUT = '12 skills Claude en français pour analyser les actions américaines, préparer un trade intraday, simuler un scénario, contrôler le risque et tenir un journal.'
 # skills on the way to an order carry the safety block
 ORDER_PATH = ["trader-scanner", "trader-entry", "trader-exit", "trader-timemachine", "trader-budget",
               "trader-pelosi", "trader-risk", "trader-broker", "trader-alerts"]
@@ -32,7 +32,7 @@ def every_text_file():
 
 
 class Repo(unittest.TestCase):
-    def test_eleven_skill_folders_at_the_root(self):
+    def test_skill_folders_at_the_root(self):
         found = sorted(d for d in os.listdir(ROOT)
                        if os.path.isfile(os.path.join(ROOT, d, "SKILL.md")))
         self.assertEqual(found, sorted(SKILLS))

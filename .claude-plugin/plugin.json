@@ -1,6 +1,6 @@
 {
   "name": "day-trader-fr",
-  "description": "11 skills Claude en français pour analyser les actions américaines, préparer un trade intraday, simuler un scénario et contrôler le risque.",
+  "description": "12 skills Claude en français pour analyser les actions américaines, préparer un trade intraday, simuler un scénario, contrôler le risque et tenir un journal.",
   "version": "2.0.0-fr.1",
   "author": {
     "name": "Dan AI Lab (adaptation française ; original : Jake Schincariol)",
